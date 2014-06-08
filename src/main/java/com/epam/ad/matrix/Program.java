@@ -13,15 +13,8 @@ public class Program {
         B.show();
         System.out.println();
 
-        Matrix C = new Matrix(col,row);
-        for (int i = 0; i < col; i++)
-        {
-            for (int j = 0; j < row; j++)
-                C.data[i][j] = (A.data[i][j] * B.data[i][j]);
-        }
+        Matrix C = Matrix.multiply(A, B);
         C.show();
-
-
 
     }
 }

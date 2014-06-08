@@ -11,6 +11,8 @@ final public class Matrix {
         data = new double[M][N];
     }
 
+
+
     public static Matrix random(int M, int N) {
         Matrix A = new Matrix(M, N);
         for (int i = 0; i < M; i++)
@@ -27,5 +29,13 @@ final public class Matrix {
                 System.out.printf("%9.4f ", data[i][j]);
             System.out.println();
         }
+    }
+    public  static  Matrix multiply(Matrix a, Matrix b){
+        Matrix c = new Matrix(a.M,a.N);
+        for (int i=0;i<a.M;i++){
+            for(int j=0;j<a.N;j++)
+                c.data[i][j]=a.data[i][j]*b.data[i][j];}
+        return c;
+
     }
 }
