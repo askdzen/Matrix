@@ -1,6 +1,5 @@
 package com.epam.ad.matrix;
 
-
 final public class Matrix {
     private final int M;             // number of rows
     private final int N;             // number of columns
@@ -12,7 +11,6 @@ final public class Matrix {
         data = new double[M][N];
     }
 
-
     public static Matrix random(int M, int N) {
         Matrix A = new Matrix(M, N);
         for (int i = 0; i < M; i++)
@@ -22,8 +20,6 @@ final public class Matrix {
         }
         return A;
     }
-
-
 
     public void show() {
         for (int i = 0; i < M; i++) {

@@ -17,7 +17,7 @@ public class Program {
         for (int i = 0; i < col; i++)
         {
             for (int j = 0; j < row; j++)
-                C.data[i][j] += (A.data[i][j] * B.data[i][j]);
+                C.data[i][j] = (A.data[i][j] * B.data[i][j]);
         }
         C.show();
 
